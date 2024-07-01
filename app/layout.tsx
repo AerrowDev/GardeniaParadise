@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css"; 
+import "./globals.css";
 import { layoutMetadata } from "@/metadata";
 import Header from "@/components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Promise<Metadata> = layoutMetadata();
+export const metadata = layoutMetadata();
 
 export default function RootLayout({
   children,
