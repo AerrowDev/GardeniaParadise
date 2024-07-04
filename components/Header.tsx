@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { IoShareSocialOutline } from "react-icons/io5";
 
 export default function Header() {
   const navMenu = [
@@ -8,13 +11,29 @@ export default function Header() {
     { id: 4, name: "Packages", link: "/" },
     { id: 5, name: "Contact Us", link: "/" },
   ];
+ 
   return (
     <header className="sticky top-0 bg-white">
+      <div className="bg-[url('/assets/img/parallax6.jpg')] bg-cover bg-no-repeat w-full">
+        <div className="container md:mx-auto flex justify-between py-2">
+          <div className="flex items-center justify-center gap-x-4">
+            <div className="flex gap-x-2 items-center text-white">
+              <IoShareSocialOutline className="text-white" />
+              OUR SOCIAL
+            </div>
+            <div className="flex gap-x-2 text-white">
+              <FaFacebookF />
+              <FaXTwitter />
+              <FaYoutube />
+              <FaInstagram />
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="container md:mx-auto flex justify-between items-center ">
         <div>
-          <Link href={'/'}>
-
-          <h1 className="text-[30px] font-bold ">Gardenia Paradise </h1>
+          <Link href={"/"}>
+            <h1 className="text-[30px] font-bold ">Gardenia Paradise </h1>
           </Link>
         </div>
         <div>
