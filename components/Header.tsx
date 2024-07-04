@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaDev, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoShareSocialOutline } from "react-icons/io5";
 
@@ -26,6 +26,13 @@ export default function Header() {
               <FaXTwitter />
               <FaYoutube />
               <FaInstagram />
+              <Link
+                href={
+                  "http://www.nicdarkthemes.com/themes/hotel/wp/demo/chalet-wordpress-theme/my-account/"
+                }
+              >
+                <FaDev />
+              </Link>
             </div>
           </div>
         </div>
