@@ -22,6 +22,10 @@ const config: Config = {
         '2xl': '2rem',
       },
     },
+      screens: {
+        md: "769px",
+        '2xl': '1441px'
+      },
     },
   },
   plugins: [],

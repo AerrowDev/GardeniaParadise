@@ -22,3 +22,27 @@ body {
     text-wrap: balance;
   }
 }
+
+/* zoom.css */
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.zoom-container img {
+  animation: zoomInOut 45s ease-in-out infinite;
+}

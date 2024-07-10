@@ -1,3 +1,4 @@
+import Hero from "@/components/Hero";
 import { config } from "@/lib/config";
 import { Metadata } from "next";
 const { baseUrl, siteOgImage, siteOgAlt } = config;
@@ -8,8 +9,8 @@ export const metadata: Metadata = {
 }
 export default function Home() {
   return (
-   <main className="min-h-[100dvh]">
-    hero
+   <main className="min-h-[100dvh] z-10">
+    <Hero/>
    </main>
   );
 }

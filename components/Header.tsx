@@ -19,9 +19,9 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 bg-white">
+    <header className="sticky top-0 bg-white z-50">
       <div className="bg-[url('/assets/img/parallax6.jpg')] bg-cover bg-no-repeat w-full">
-        <div className="container md:mx-auto flex justify-between py-2">
+        <div className="container mx-auto flex 2xl:flex-row  lg:flex-col flex-col justify-between py-2 gap-y-1">
           <div className="flex items-center justify-center gap-x-4">
             <div className="flex gap-x-2 items-center text-white">
               <IoShareSocialOutline className="text-white" />
