@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   FaDev,
@@ -19,7 +20,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 bg-white z-50">
+    <header className="sticky top-0 bg-[#f8f8f8] z-50">
       <div className="bg-[url('/assets/img/parallax6.jpg')] bg-cover bg-no-repeat w-full">
         <div className="container mx-auto flex 2xl:flex-row  lg:flex-col flex-col justify-between py-2 gap-y-1">
           <div className="flex items-center justify-center gap-x-4">
@@ -60,7 +61,16 @@ export default function Header() {
       <div className="  md:mx-auto flex flex-col justify-between items-center ">
         <div className="min-h-[100px] flex items-center justify-center border-b-[1px] w-full">
           <Link href={"/"}>
-            <h1 className="text-[30px] font-bold ">Gardenia Paradise </h1>
+            <h1 className="text-[30px] font-bold ">
+              {/* Gardenia Paradise  */}
+              <Image
+                src={"/assets/img/logo.png"}
+                alt="logo"
+                width={500}
+                height={500}
+                className="object-contain w-[250px] h-[120px]"
+              />
+            </h1>
           </Link>
         </div>
         <div className="min-h-[50px] flex items-center justify-center w-full  border-b-[1px] gap-x-2.5">
