@@ -1,0 +1,9 @@
+{
+  "background.fullscreen": {
+    "images": ["https://scontent.fmnl33-1.fna.fbcdn.net/v/t39.30808-6/354437458_6322554341170082_8226736377087394350_n.jpg?stp=dst-jpg_s600x600&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGOioQenQR5-HdLz7BBGnPO-mxDJlq2xYj6bEMmWrbFiBQMx8lLtXgvoj0ntRUgXU5i74AbHlZTv3Ri3EbscImh&_nc_ohc=655ZWroa9mAQ7kNvgEmvmVS&_nc_ht=scontent.fmnl33-1.fna&oh=00_AYA2NT6GVtVvQi6KVIXRD-JNNHbVHecclGhW2rVO_3rY9g&oe=66988354"], // urls of your images
+    "opacity": 0.95, // 0.85 ~ 0.95 recommended
+    "size": "cover", // also css, `cover` to self-adaption (recommended)，or `contain`、`200px 200px`
+    "position": "top", // alias to `background-position`, default `center`
+    "interval": 0 // seconds of interval for carousel, default `0` to disabled.
+  }
+}
